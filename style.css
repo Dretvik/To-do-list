@@ -1,0 +1,125 @@
+body{
+    background-color: lightgray;
+}
+table, tr, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 5px;
+}
+th {
+    background-color: darkblue;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+.importance-1{
+    background-color: green;
+    border-color: black;
+}
+.importance-2{
+    background-color: yellowgreen;
+    border-color: black;
+}
+.importance-3{
+    background-color: yellow;
+    border-color: black;
+}
+.importance-4{
+    background-color: orange;
+    border-color: black;
+}
+.importance-5{
+    background-color: red;
+    border-color: black;
+}
+.checkboxes {
+    width: 3vw;
+    height: 3vw; 
+    margin: 0vw;
+    
+}
+#deleteTaskButton{
+    background-color: tomato;
+    border-radius: 5px;
+}
+span {
+    color: white;
+    font-size: 2vw;
+    font-weight: bolder;
+    font-style: italic;
+    animation-name: colorFun;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorFun{
+    0% {
+        /* color: #E40303; */
+        background:  linear-gradient(90deg,
+        #732982 0%, 
+        #24408E 20%, 
+        #008026 40%,
+        #FFED00 60%,
+        #FF8C00 80%,
+        #E40303 100%);
+    }
+    20% {
+        /* color: #FF8C00; */
+        background: linear-gradient(90deg,
+        #24408E 0%, 
+        #008026 20%,
+        #FFED00 40%,
+        #FF8C00 60%,
+        #E40303 80%,
+        #732982 100% );
+    }
+    40% {
+        /* color: #FFED00; */
+        background:linear-gradient(90deg,
+        #008026 0%,
+        #FFED00 20%,
+        #FF8C00 40%,
+        #E40303 60%,
+        #732982 80%,
+        #24408E 100%);
+    } 
+    60% {
+        /* color: #008026; */
+        background: linear-gradient(90deg,
+        #FFED00 0%,
+        #FF8C00 20%,
+        #E40303 40%,
+        #732982 60%,
+        #24408E 80%, 
+        #008026 100%);
+    }
+    80% {
+        /* color: #24408E; */
+        background:linear-gradient(90deg,
+        #FF8C00 0%,
+        #E40303 20%,
+        #732982 40%,
+        #24408E 60%, 
+        #008026 80%,
+        #FFED00 100%);
+    }
+    100% {
+        /* color: #732982; */
+        background:linear-gradient(90deg,
+        #E40303 0%,
+        #732982 20%,
+        #24408E 40%, 
+        #008026 60%,
+        #FFED00 80%,
+        #FF8C00 100%);
+    }
+}
+#alarmCheckBoxes{
+    background: #E40303;
+    border-radius: 50%;
+}

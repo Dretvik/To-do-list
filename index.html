@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onload="show()">
+    <div id="app">
+        <p>
+            <h1>"To-do" liste:</h1>
+            <p>Legg til beskrivelse av oppgaven, velg viktighetsgrad, og dato/tid du ønsker at den skal være ferdig og deretter trykk "Legg til oppgave".</p>
+            <input id="taskDescription" type="text" placeholder="Oppgave Beskrivelse"/>
+            <select id="taskImportance">
+                <option class="importance-1" value="1">1</option>
+                <option class="importance-2" value="2">2</option>
+                <option class="importance-3" value="3">3</option>
+                <option class="importance-4" value="4">4</option>
+                <option class="importance-5" value="5">5</option>
+            </select>
+            <input id="dueDate" type="date"/>
+            <input id="dueTime" type="time"/>
+            <button onclick="addTask()">Legg til oppgave</button>
+        </p>
+        <table id="tasksTable"></table>
+    </div>
+    <p>This product was made by <span>Ellie Marie Dretvik Pedersen</span></p>
+
+    <script src="./JS/model.js"></script>
+    <script src="./JS/controller.js"></script>
+    <script src="./JS/view.js"></script>
+</body>
+</html>
