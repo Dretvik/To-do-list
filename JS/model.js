@@ -11,8 +11,8 @@
             description:'Legge til punkter i lista!',
             isDone: false,
             importance: 5, 
-            timestamp: new Date().toLocaleString(),
-            dueDate: 'Today',
+            timestamp: new Date().toLocaleString(),  // Plukker ut Dato og tidspunkt
+            dueDate: new Date().toLocaleDateString(), //Plukker ut bare datoen, og ikke klokkeslettet
             dueTime: '15:00',
         },
         ],
